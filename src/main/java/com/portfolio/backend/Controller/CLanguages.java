@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping({"idiomas"})
-@CrossOrigin(origins = "http://localhost:4200/")
+//@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://pfportafoliofronteed.web.app/")
 public class CLanguages {
 
     @Autowired

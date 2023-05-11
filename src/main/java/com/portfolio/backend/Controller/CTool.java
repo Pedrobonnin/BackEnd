@@ -30,7 +30,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping({"tool"})
-@CrossOrigin(origins = "http://localHost:4200/")
+//@CrossOrigin(origins = "http://localHost:4200/")
+@CrossOrigin(origins = "https://pfportafoliofronteed.web.app/")
 public class CTool {
      @Autowired STool sTool;
     

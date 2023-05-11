@@ -30,7 +30,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping({"redes"})
-@CrossOrigin(origins = "http://localHost:4200/")
+//@CrossOrigin(origins = "http://localHost:4200/")
+@CrossOrigin(origins = "https://pfportafoliofronteed.web.app/")
 public class CRedes {
      @Autowired SRedes sRedes;
     

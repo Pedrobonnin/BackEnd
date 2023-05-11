@@ -23,7 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/")
+//@CrossOrigin(origins = "http://localhost:4200/")
+@CrossOrigin(origins = "https://pfportafoliofronteed.web.app/")
 @RequestMapping({"proyectos"})
 public class CProyects {
    @Autowired SProyects sProyects;
