@@ -10,14 +10,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
+
 
 /**
  *
  * @author bonni
  */
-@Setter @Getter
+
 @Entity
 public class Contacto {
     @Id
@@ -41,6 +40,38 @@ public class Contacto {
     public Contacto(String desCont, String email, String phone) {
         this.desCont = desCont;
         this.email = email;
+        this.phone = phone;
+    }
+
+    public int getIdCont() {
+        return idCont;
+    }
+
+    public void setIdCont(int idCont) {
+        this.idCont = idCont;
+    }
+
+    public String getDesCont() {
+        return desCont;
+    }
+
+    public void setDesCont(String desCont) {
+        this.desCont = desCont;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
         this.phone = phone;
     }
     

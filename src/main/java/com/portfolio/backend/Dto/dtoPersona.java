@@ -1,11 +1,10 @@
 package com.portfolio.backend.Dto;
 
 import javax.validation.constraints.NotBlank;
-import lombok.Getter;
-import lombok.Setter;
 
 
-@Getter @Setter
+
+
 public class dtoPersona {
 
     @NotBlank
@@ -40,6 +39,54 @@ public class dtoPersona {
         this.imglogo = imglogo;
         this.cv = cv;
       
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public String getProfesion() {
+        return profesion;
+    }
+
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
+    }
+
+    public String getImglogo() {
+        return imglogo;
+    }
+
+    public void setImglogo(String imglogo) {
+        this.imglogo = imglogo;
+    }
+
+    public String getCv() {
+        return cv;
+    }
+
+    public void setCv(String cv) {
+        this.cv = cv;
     }
 
     

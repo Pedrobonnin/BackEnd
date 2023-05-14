@@ -8,10 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import lombok.Getter;
-import lombok.Setter;
+
+
 
 
 /**
@@ -19,7 +17,7 @@ import lombok.Setter;
  * @author bonni
  */
 
-@Getter @Setter
+
 public class dtoContacto {
     
     @NotBlank
@@ -41,4 +39,31 @@ public class dtoContacto {
         this.phone = phone;
      
     }    
+
+    public String getDesCont() {
+        return desCont;
+    }
+
+    public void setDesCont(String desCont) {
+        this.desCont = desCont;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+    
+    
+    
 }
